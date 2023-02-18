@@ -1,0 +1,28 @@
+<!--here is my run time analysis for my work
+
+    tinyArray = insert(3.893 µs) append(4.304 µs)
+    smallArray = insert(9.819 µs) append(7.37 µs)
+    mediumArray = insert(110.604 µs) append(83.029 µs)
+    largeArray = insert(6.86783 µs) append(626.348 µs)
+    extralargeArray = insert(834.753536 µs) append(3.280125 µs)
+
+What I saw: The difference between Insert and Push for small Arrays is minimal. 
+For Medium Arrays, inserting records is quicker than appending them. 
+Large and Extra Large Arrays have an even more significant time gap - the larger the array, 
+the bigger the difference. Generally, 
+Medium Array appears to be the most scalable on both Inserts and Appends.
+
+
+Extra Credit: The Insert function is using unshift which adds the element at the start of the array. 
+Append is using push which adds the element at the end of the array. 
+ Unshift will have a slower time because it also has to move all the elements after the new element is added. 
+ Push would scale much better in the long run because it doesn’t require moving the entire array elements but 
+ adds a new element on the end.
+
+
+
+
+
+
+
+-->
